@@ -1,0 +1,109 @@
+.navbar-p {
+  height: 72px;
+  padding: 0px 16px;
+}
+
+.search__form input, .search__form button {
+  border: none;
+  background-color: #F5F5F5;
+  padding: 8px 0px;
+  color: #A2A2A2;
+}
+
+.search__form input {
+  width: calc( 100% - 24px ) !important;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.search__form input:focus {
+  background-color: #F5F5F5;
+  color: #444;
+  outline: none;
+}
+
+.search__form button {
+  color: #2A7AE4 !important;
+  padding-right: 16px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+
+.nav__button {
+  width: 133px;
+  height: auto;
+  border-color: #2A7AE4 !important;
+  border-radius:0 !important;
+  color: #2A7AE4 !important;
+}
+
+.nav__button:hover {
+  background-color: #2A7AE4 !important;
+  color: #fff !important;
+}
+
+
+.search__logo {
+  font-size: 14px;
+}
+
+.nav__logo {
+  width: 100px;
+  height: auto;
+}
+
+.search__button-phone {
+  background-color: transparent;
+  border: 0px;
+}
+
+.nav__btn {
+  --bs-btn-padding-y: 0.775rem !important;
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .search__form {
+    width: 272px;
+    height: 40px;
+  }
+
+  .nav__button { 
+    width: 166px;
+    height: 50px;
+  }
+
+  .navbar-p {
+    height: 72px;
+    padding: 0px;
+  }
+  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  
+  .search__form {
+    width: 393px;
+    height: 40px;
+  }
+
+
+  .nav__button { 
+    width: 182px;
+    height: 50px;
+  }
+
+  .navbar-p {
+    height: 115px;
+  }
+
+  .nav__logo {
+    width: 176px;
+    height: auto;
+  }
+  
+}
