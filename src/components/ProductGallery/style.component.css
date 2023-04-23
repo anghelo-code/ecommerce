@@ -1,0 +1,29 @@
+.product__img {
+  width: 100% !important;
+}
+.product__card {
+  height: auto;
+}
+
+.product__text {
+  margin-top: 8px !important;
+}
+.product__p {
+  margin: 8px 0px;
+}
+
+.product__link {
+  text-decoration: none;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  
+  
+}
