@@ -5,8 +5,8 @@ import './style.component.css';
 export const Banner = () => {
   return (
     <section>
-      <div class="card text-bg-dark">
-        <img src={banner} class="card-img banner__img" alt="Banner" />
+      <div className="card text-bg-dark">
+        <img src={banner} className="card-img banner__img" alt="Banner" />
 
         <Content/>
       </div>
