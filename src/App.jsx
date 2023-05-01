@@ -10,7 +10,16 @@ function App() {
     hrefButton: '#',
     textButton: 'Login',
     stateButton: true,
-  })
+  });
+
+  const products = [
+    { text: "Producto XYZzz", price: "60", link: "#" },
+    { text: "Producto XYZzz", price: "60", link: "#" },
+    { text: "Producto XYZzz", price: "60", link: "#" },
+    { text: "Producto XYZzz", price: "60", link: "#" },
+    { text: "Producto XYZzz", price: "60", link: "#" },
+    { text: "Producto XYZzz", price: "60", link: "#" }
+  ]
 
   return (
     <>
@@ -18,9 +27,9 @@ function App() {
       <Banner />
 
       <main className="container" >
-        <ProductGallery title="Star Wars" link="#" />
-        <ProductGallery title="Consolas" link="#" />
-        <ProductGallery title="Diversos" link="#" />
+        <ProductGallery title="Star Wars" link="#" products={ products } />
+        <ProductGallery title="Consolas" link="#" products={ products } />
+        <ProductGallery title="Diversos" link="#" products={ products } />
       </main>
 
       <br /><br /><br /><br /><br /><br /><br /><br />

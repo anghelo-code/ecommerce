@@ -1,25 +1,23 @@
-import { Logo } from '../shared/Logo';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { useProductRender } from './hook/useProductRender';
 import { ProductCard } from './ProductCard';
+import { ProductHead } from './ProductHead';
 import './style.component.css';
 
-export const ProductGallery = ({ title, link }) => {
+export const ProductGallery = ({ title, link, products }) => {
+
+  const productsRender = useProductRender( products );
+
   return (
     <section className="pt-5" >
-      <div className="d-flex justify-content-between align-items-center mb-2">
-        <h2 className="fw-bold" >{ title }</h2>
-        <a href={ link } className="fw-bold text-decoration-none" >Ver todo <Logo logo={ faArrowRight } /></a>
-      </div>
-      
+      <ProductHead title={ title } link={ link } />
+
       <div className="row h-25 gy-4">
-       <ProductCard text="Producto XYZzz" price="60" link="#" />
-       <ProductCard text="Producto XYZzz" price="60" link="#" />
-       <ProductCard text="Producto XYZzz" price="60" link="#" />
-       <ProductCard text="Producto XYZzz" price="60" link="#" />
-       <ProductCard text="Producto XYZzz" price="60" link="#" />
-       <ProductCard text="Producto XYZzz" price="60" link="#" />
-      </div>
-    
+        {
+          productsRender.map( (product, index) => (
+            <ProductCard key={ index } { ...product } />
+          ))
+        } 
+      </div>    
     </section>
   )
 }
